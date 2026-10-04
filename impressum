@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Impressum — She Shapes Digital</title>
+<style>
+  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; background:#f7f6ff; color:#1a1030; line-height:1.7; margin:0; }
+  main { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+  h1 { color:#3d1f8a; letter-spacing:.04em; text-transform:uppercase; font-size:1.6rem; border-bottom:4px solid #e8f535; display:inline-block; padding-bottom:4px; }
+  h2 { color:#3d1f8a; font-size:1.05rem; margin-top:2rem; }
+  a { color:#3d1f8a; }
+  .back { display:inline-block; margin-bottom:2rem; font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">&larr; Back to She Shapes Digital</a>
+  <h1>Impressum</h1>
+
+  <h2>Angaben gemäß § 5 DDG</h2>
+  <p>
+    We are two freelancers offering this service. We are Anna Ackermann and Nithima Ducrocq
+  </p>
+
+
+  <h2>Kontakt / Contact</h2>
+  <p>
+    E-mail: <a href="mailto:sheshapesdigital@proton.me">sheshapesdigital@proton.me</a><br>
+  </p>
+
+
+
+  <p style="margin-top:3rem;font-size:.85rem;color:#6a5d8a;">
+  </p>
+</main>
+</body>
+</html>
