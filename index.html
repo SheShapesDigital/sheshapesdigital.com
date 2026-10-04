@@ -10,10 +10,34 @@
 <meta property="og:description" content="Two months from now, you could be doing the thing you only dare to dream about. A three-week Creation Studio for women changing tech, 9–30 November.">
 <meta property="og:type" content="website">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+/* SELF-HOSTED FONTS */
+@font-face { font-family:'Space Grotesk'; font-weight:300; font-style:normal; font-display:swap; src:url('fonts/space-grotesk-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family:'Space Grotesk'; font-weight:400; font-style:normal; font-display:swap; src:url('fonts/space-grotesk-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family:'Space Grotesk'; font-weight:500; font-style:normal; font-display:swap; src:url('fonts/space-grotesk-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family:'Space Grotesk'; font-weight:600; font-style:normal; font-display:swap; src:url('fonts/space-grotesk-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family:'DM Mono'; font-weight:300; font-style:normal; font-display:swap; src:url('fonts/dm-mono-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family:'DM Mono'; font-weight:400; font-style:normal; font-display:swap; src:url('fonts/dm-mono-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family:'DM Mono'; font-weight:500; font-style:normal; font-display:swap; src:url('fonts/dm-mono-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family:'DM Mono'; font-weight:300; font-style:italic; font-display:swap; src:url('fonts/dm-mono-latin-300-italic.woff2') format('woff2'); }
 
+/* CURRICULUM: equal-height cards */
+.track { grid-template-rows: repeat(4, auto); column-gap: 1.25rem; row-gap: 0.75rem; }
+.track-week { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0.75rem; }
+.track-node { height: 100%; align-items: center; }
+@media (max-width: 960px) {
+  .track { grid-template-rows: none; }
+  .track-week { display: flex; flex-direction: column; grid-row: auto; gap: 0.75rem; }
+  .track-node { height: auto; }
+}
+
+/* LINKEDIN BUTTON */
+.btn-linkedin { display:inline-flex; align-items:center; gap:0.5rem; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; color:var(--white); border:2px solid rgba(255,255,255,0.45); padding:0.4rem 0.95rem; border-radius:2px; transition:all 0.15s; }
+.btn-linkedin svg { width:14px; height:14px; fill:currentColor; flex-shrink:0; }
+.btn-linkedin:hover { color:var(--yellow); border-color:var(--yellow); }
+
+/* FOOTER WRAP */
+.footer-links { flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.75rem 1.5rem; }
+  
 <style>
 :root {
   --purple-deep:   #3d1f8a;
@@ -1046,6 +1070,7 @@ footer {
     <li><a href="#for-who">Is it for me?</a></li>
     <li><a href="#facilitators">Who we are</a></li>
     <li><a href="#pricing">Pricing</a></li>
+    <li><a href="https://www.linkedin.com/company/she-shapes-digital/" class="btn-linkedin" target="_blank" rel="noopener" aria-label="She Shapes Digital on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a></li>
     <li><a href="https://maven.com/she-shapes-digital/from-idea-to-impact-studio" class="nav-cta">Apply</a></li>
   </ul>
 </nav>
@@ -1104,91 +1129,27 @@ footer {
     <h2 class="section-title">Three weeks. <span class="yw">Six live sessions.</span></h2>
     <p class="section-sub">Nine topics, two live sessions a week. Every week pairs the practical build work with the money side and the personal side — because in practice they're the same problem. Research on first-time founders keeps finding the same two killers: building something before checking anyone wants it, and running out of focus or energy before it lands. We designed the three weeks around both.</p>
 
+
     <div class="track">
-      <div class="track-week">
-        <div class="track-head">
-          <span class="wk">Week 1 · 9–15 Nov</span>
-          <span class="th">Find the problem, and the people who have it</span>
-        </div>
-        <div class="track-node">
-          <div class="node-num">1</div>
-          <div class="node-body">
-            <h4>Identify a problem you love solving</h4>
-            <p>You leave with one problem written in a sentence, and the reason it's yours rather than anyone's.</p>
-          </div>
-        </div>
-        <div class="track-node">
-          <div class="node-num">2</div>
-          <div class="node-body">
-            <h4>Designing for your audience</h4>
-            <p>Who exactly this is for, how to talk to them, and your first real conversation done live with us in the room.</p>
-          </div>
-        </div>
-        <div class="track-node">
-          <div class="node-num">3</div>
-          <div class="node-body">
-            <h4>Connecting with your true purpose</h4>
-            <p>Why you keep coming back to this, what you actually want from it, and what you're not willing to give up for it.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="track-week">
-        <div class="track-head">
-          <span class="wk">Week 2 · 16–22 Nov</span>
-          <span class="th">Decide, build, and check it works</span>
-        </div>
-        <div class="track-node">
-          <div class="node-num">4</div>
-          <div class="node-body">
-            <h4>Stop scoping, start deciding: beating perfectionism</h4>
-            <p>One decision made: the smallest thing you can finish this week. Plus why endless research feels productive and isn't.</p>
-          </div>
-        </div>
-        <div class="track-node">
-          <div class="node-num">5</div>
-          <div class="node-body">
-            <h4>Test your ideas before building them</h4>
-            <p>How to find out people want it before you spend six months making it. The single most common reason first projects fail.</p>
-          </div>
-        </div>
-        <div class="track-node">
-          <div class="node-num">6</div>
-          <div class="node-body">
-            <h4>Responsible design methods and frameworks</h4>
-            <p>Who could be harmed or left out by what you're making, and how to catch it now rather than after launch.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="track-week">
-        <div class="track-head">
-          <span class="wk">Week 3 · 23–30 Nov</span>
-          <span class="th">Make it sustainable — financially and personally</span>
-        </div>
-        <div class="track-node">
-          <div class="node-num">7</div>
-          <div class="node-body">
-            <h4>How this could pay for itself</h4>
-            <p>Business models, pricing, funding routes and grants. How other women have turned a project like yours into income.</p>
-          </div>
-        </div>
-        <div class="track-node">
-          <div class="node-num">8</div>
-          <div class="node-body">
-            <h4>Talking about it without shrinking</h4>
-            <p>Telling people what you've made, in your own voice. Optional sessions on public speaking and personal branding.</p>
-          </div>
-        </div>
-        <div class="track-node">
-          <div class="node-num">9</div>
-          <div class="node-body">
-            <h4>A pace you can actually keep</h4>
-            <p>Over half of founders burn out within a year. You leave with a next-step plan built around your real life, not a fantasy one.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="track-week">
+    <div class="track-head"><span class="wk">Week 1 · 9–15 Nov</span><span class="th">Find the problem, and who has it</span></div>
+    <div class="track-node"><div class="node-num">1</div><div class="node-body"><h4>Identify a problem you love solving</h4><p>One problem, in one sentence, and why it's yours.</p></div></div>
+    <div class="track-node"><div class="node-num">2</div><div class="node-body"><h4>Designing for your audience</h4><p>Who it's for, and your first real conversation, done live with us.</p></div></div>
+    <div class="track-node"><div class="node-num">3</div><div class="node-body"><h4>Connecting with your true purpose</h4><p>Why you keep coming back to this, and what you want from it.</p></div></div>
+  </div>
+  <div class="track-week">
+    <div class="track-head"><span class="wk">Week 2 · 16–22 Nov</span><span class="th">Decide, build, check it works</span></div>
+    <div class="track-node"><div class="node-num">4</div><div class="node-body"><h4>Stop scoping, start deciding</h4><p>Choose the smallest thing you can finish this week.</p></div></div>
+    <div class="track-node"><div class="node-num">5</div><div class="node-body"><h4>Test your ideas before building them</h4><p>Find out people want it before you spend months on it.</p></div></div>
+    <div class="track-node"><div class="node-num">6</div><div class="node-body"><h4>Responsible design methods</h4><p>Who could be left out or harmed, and how to catch it early.</p></div></div>
+  </div>
+  <div class="track-week">
+    <div class="track-head"><span class="wk">Week 3 · 23–30 Nov</span><span class="th">Make it last: money and mindset</span></div>
+    <div class="track-node"><div class="node-num">7</div><div class="node-body"><h4>How this could pay for itself</h4><p>Business models, pricing, funding and grants.</p></div></div>
+    <div class="track-node"><div class="node-num">8</div><div class="node-body"><h4>Talking about it without shrinking</h4><p>Tell people what you've made, in your own voice.</p></div></div>
+    <div class="track-node"><div class="node-num">9</div><div class="node-body"><h4>A pace you can actually keep</h4><p>A next-step plan built around your real life.</p></div></div>
+  </div>
+</div>
 
     <div class="track-outcome">
       <span>A problem you can name</span>
@@ -1453,6 +1414,9 @@ footer {
       <li><a href="#for-who">Is it for me?</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="mailto:sheshapesdigital@proton.me">Contact</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+      <li><a href="https://www.linkedin.com/company/she-shapes-digital/" class="btn-linkedin" target="_blank" rel="noopener" aria-label="She Shapes Digital on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a></li>
     </ul>
     <p class="footer-copy">© 2026 She Shapes Digital. All rights reserved.</p>
   </div>
