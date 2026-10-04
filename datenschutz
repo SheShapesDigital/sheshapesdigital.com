@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Privacy Policy (Datenschutzerklärung) — She Shapes Digital</title>
+<style>
+  body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; background:#f7f6ff; color:#1a1030; line-height:1.7; margin:0; }
+  main { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+  h1 { color:#3d1f8a; letter-spacing:.04em; text-transform:uppercase; font-size:1.6rem; border-bottom:4px solid #e8f535; display:inline-block; padding-bottom:4px; }
+  h2 { color:#3d1f8a; font-size:1.05rem; margin-top:2rem; }
+  a { color:#3d1f8a; }
+  .back { display:inline-block; margin-bottom:2rem; font-size:.9rem; }
+  .note { font-size:.85rem; color:#6a5d8a; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">&larr; Back to She Shapes Digital</a>
+  <h1>Privacy Policy</h1>
+  <p class="note">Datenschutzerklärung · Last updated: 04.10.2026</p>
+
+  <h2>1. Who is responsible</h2>
+  <p>Anna Ackermann<br>E-mail: <a href="mailto:sheshapesdigital@proton.me">sheshapesdigital@proton.me</a></p>
+
+  <h2>2. Visiting this website</h2>
+  <p>This website is hosted on GitHub Pages (GitHub Inc. / Microsoft, USA). When you open the site, the hosting provider may process technical data such as your IP address, browser type and the time of the request, so that the page can be delivered and kept secure. Legal basis: our legitimate interest in running the website (Art. 6(1)(f) GDPR). See GitHub's privacy statement for details.</p>
+  <p>This website does <strong>not</strong> use cookies, analytics or tracking tools, and does not load third-party fonts. Our fonts are stored on our own server, so no data is sent to Google.</p>
+
+  <h2>3. Applying for the studio</h2>
+  <p>If you apply, we collect the information you enter in the application form (for example your name, e-mail address and the answers you give). We use it to review your application, contact you and run the programme. Legal basis: taking steps at your request before a contract (Art. 6(1)(b) GDPR). The form is provided by Maven, which processes data on our behalf. [Add: where data is stored and the transfer mechanism, taken from the provider's data processing agreement.] We delete application data after the cohort ends unless you become a participant or ask us to keep it.</p>
+
+  <h2>4. Booking a call</h2>
+  <p>If you book a call, you are sent to Calendly, which processes your name, e-mail address and booking details under its own privacy policy.</p>
+
+  <h2>5. Payment and enrolment on Maven</h2>
+  <p>Enrolment and payment run through Maven (Maven Learning, Inc.), which is responsible for the data you give them. Please see Maven's privacy policy.</p>
+
+  <h2>6. E-mail contact</h2>
+  <p>If you write to us, we use your message and address to reply. Legal basis: Art. 6(1)(f) GDPR, or Art. 6(1)(b) if your message relates to a contract.</p>
+
+  <h2>7. LinkedIn</h2>
+  <p>We link to our LinkedIn page. No data is sent to LinkedIn until you click the link; after that, LinkedIn's privacy policy applies.</p>
+
+  <h2>8. Your rights</h2>
+  <p>You have the right to access, correction, deletion, restriction of processing, data portability and objection (Art. 15–21 GDPR), and to withdraw any consent you gave at any time. You can also lodge a complaint with a data protection authority.</p>
+
+
+</main>
+</body>
+</html>
