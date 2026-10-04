@@ -12,9 +12,13 @@
 
 
 
-/* CURRICULUM: equal-height cards */
-.track { grid-template-rows: repeat(4, auto); column-gap: 1.25rem; row-gap: 0.75rem; }
-.track-week { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0.75rem; }
+
+  
+<style>
+  /* CURRICULUM: equal-height cards */
+  
+track { grid-template-rows: repeat(4, auto); column-gap: 1.25rem; row-gap: 0.75rem; }
+track-week { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0.75rem; }
 .track-node { height: 100%; align-items: center; }
 @media (max-width: 960px) {
   .track { grid-template-rows: none; }
@@ -29,8 +33,6 @@
 
 /* FOOTER WRAP */
 .footer-links { flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.75rem 1.5rem; }
-  
-<style>
 :root {
   --purple-deep:   #3d1f8a;
   --purple-mid:    #5a35b5;
