@@ -15,6 +15,12 @@
 
   
 <style>
+  /* IDEA CLINIC BAR */
+.clinic-bar { background: var(--yellow); color: var(--purple-deep); display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.5rem 1rem; padding: 0.55rem 1.25rem; font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem; font-weight: 500; text-align: center; }
+.clinic-bar strong { font-weight: 600; }
+.clinic-btn { background: var(--purple-deep); color: var(--yellow); font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding: 0.4rem 0.95rem; border-radius: 2px; white-space: nowrap; transition: background 0.15s; }
+.clinic-btn:hover { background: var(--charcoal); }
+  
   /* CURRICULUM: equal-height cards */
   
 track { grid-template-rows: repeat(4, auto); column-gap: 1.25rem; row-gap: 0.75rem; }
@@ -1056,6 +1062,10 @@ footer {
 </style>
 </head>
 <body>
+  <div class="clinic-bar">
+  <span>Grab a spot in our <strong>free 1-hour Idea Clinic</strong></span>
+  <a href="CLINIC_LINK" class="clinic-btn" target="https://maven.com/she-shapes-digital/o/3a7c5a" rel="noopener">Sign up</a>
+</div>
 
 <nav>
   <a href="#" class="nav-logo"><span>She Shapes</span> Digital</a>
